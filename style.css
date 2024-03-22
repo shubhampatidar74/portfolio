@@ -1,0 +1,928 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #252632;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #050A30;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 10rem;
+  background-color: #050A30;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.logo {
+  color: #FF2679;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  list-style: none;
+}
+
+#activenev {
+  color: #FF2679;
+}
+
+.nav>ul>li>a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #e7e7e7;
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+}
+
+.nav>ul>li>a:hover {
+  color: #FF2679;
+}
+
+.nav span {
+  display: none;
+  cursor: pointer;
+}
+
+.menuicon {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 15px;
+  right: 60px;
+  color: #000000;
+}
+
+#menuclose {
+  display: none;
+}
+
+.home {
+  width: 100%;
+  height: calc(100% - 80px);
+  display: flex;
+  overflow: hidden;
+  padding: 0rem 10rem;
+}
+
+.box {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box2 img {
+  width: 35vw;
+  margin-top: 7%;
+
+}
+
+.homepagecontent>h1 {
+  color: #fff8f5;
+  font-size: 3vw;
+  font-family: "Nunito", sans-serif;
+}
+
+.homepagecontent .Resumebutton {
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background-color: #FF2679;
+  padding: 0.6rem 2rem;
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+  box-shadow: #FF2679 0px 0px 15px 2px;
+}
+
+.homepagecontent .Resumebutton:hover {
+  color: #050A30;
+  background-color: #fff;
+  border: 2px solid #FF2679;
+  box-shadow: #FF2679 0px 0px 30px 2px;
+}
+
+.homepagecontent span {
+  font-size: 2rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.homepagecontent span i {
+  color: #d5d5d5;
+}
+
+#About_Section {
+  width: 100%;
+  height: 100%;
+  padding: 0rem 10rem;
+  background-color: #252632;
+  display: flex;
+  overflow: hidden;
+}
+
+.aboutimage {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutcontent {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abouttext {
+  position: relative;
+}
+
+.abouttext h1 {
+  color: white;
+  font-size: 3rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.abouttext h1 span {
+  color: #FF2679;
+}
+
+.abouttext p {
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+
+.abouttext button {
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background-color: #03EEFF;
+  width: 9rem;
+  height: 2.7rem;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  box-shadow: 0px 0px 10px #03EEFF;
+}
+
+.aboutimage img {
+  width: 35vw;
+}
+
+#skills {
+  padding: 0rem 10rem;
+  width: 100%;
+  height: 100%;
+  background-color: #252632;
+}
+
+#skills>h1 {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  font-size: 2.6vw;
+  padding: 1rem;
+}
+
+.skillcardcontainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 5vw;
+}
+
+.skillcard {
+  width: 30vw;
+  padding: 1rem;
+  border: 2px solid white;
+  border-radius: 2rem;
+  background-color: #263254;
+}
+
+.skillcard h1 {
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.skill_details img {
+  width: 5rem;
+  background-size: cover;
+
+}
+
+.skill_details {
+  width: 100%;
+  height: 6rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+  background-color: #050A30;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+}
+
+.skill_details h2 {
+  color: #e7e7e7;
+  font-family: "Nunito", sans-serif;
+}
+
+#Project {
+  width: 100%;
+  height: auto;
+  padding: 1rem 10rem;
+  background-color: #252632;
+}
+
+#Project h1 {
+  font-size: 2.6rem;
+  padding: 1rem;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.projectcontainer {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.projectbox {
+  width: 23rem;
+  height: 17rem;
+  border: 1px solid #a9a9a944;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background-color: #263254;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+}
+
+.projectbox:hover {
+  transform: translateY(-3%);
+
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.projectbox img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  border-radius: 1rem;
+  background-position: center;
+}
+
+.projectbox h2 {
+  font-size: 1.8rem;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+#contactus {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #252632;
+}
+
+#contactus h1 {
+  font-size: 2.6rem;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  padding-top: 1rem;
+  color: #fff;
+}
+#contactus h1 span{
+  font-size: 2.6vw;
+  color: #FF2679;
+}
+
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 50vw;
+  padding: 12px;
+  border: 2px solid #179dc2;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 4px #191926;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 1.2rem;
+  outline: none;
+  color: #fff;
+  background-color: #e7e7e700;
+}
+
+input[type=submit] {
+  background-color: #FF2679;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #e44e88;
+}
+
+label {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  
+}
+footer{
+  width: 100%;
+  height: auto;
+  padding: 2rem 10rem;
+  display: flex;
+  background-color: #fff;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.location_And_Email{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location_And_Email, h3,p{
+  font-family: "Nunito", sans-serif;
+  
+}
+
+.footeritems{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footeritems h4{
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.footeritems h1{
+  font-family: "Nunito", sans-serif;
+  color: #e44e88;
+}
+.footeritems a{
+  color: #000;
+  padding: 0.3rem;
+  font-family: "Nunito", sans-serif;
+}
+.footeritems a i{
+ font-size: 2rem;
+}
+.copyright {
+  width: 100%;padding: 1rem;
+  background-color: #fff;
+}
+.copyright p{
+ color: #000;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  * {
+    font-size: 10px;
+  }
+
+  .nav {
+    padding: 0rem 5rem;
+  }
+
+  .nav ul li a {
+    font-size: 2.5rem;
+  }
+
+  .nav ul li a {
+    gap: 3rem;
+  }
+
+  .logo {
+    font-size: 4rem;
+  }
+
+  .home {
+    padding: 0rem 5rem;
+    height: calc(100% - 80px);
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .box1 {
+    height: 40%;
+    justify-content: start;
+  }
+
+  .box2 {
+    height: 60%;
+  }
+
+  .box2 img {
+    width: 60vh;
+  }
+
+  .homepagecontent>h1 {
+    font-size: 5vw;
+  }
+
+  .homepagecontent .Resumebutton {
+    padding: 1rem 3rem;
+    font-size: 3.5rem;
+
+  }
+
+  .homepagecontent span {
+    font-size: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+  }
+
+  .homepagecontent span i {
+    color: #d5d5d5;
+    font-size: 5rem;
+  }
+
+  #About_Section {
+    padding: 0rem 2rem;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .aboutcontent,
+  .aboutimage {
+    height: auto;
+    width: 100%;
+  }
+
+  .aboutimage img {
+    width: 58vh;
+  }
+
+  .aboutcontent h1 {
+    font-size: 9vw;
+    text-align: center;
+  }
+
+  .aboutcontent p {
+    font-size: 3vw;
+    text-align: justify;
+  }
+
+  .aboutcontent h1 span {
+    font-size: 9vw;
+  }
+
+  #skills {
+    height: auto;
+    padding: 0rem 2rem;
+  }
+
+  #skills>h1 {
+    font-size: 8vw;
+    padding: 1rem;
+  }
+
+  .skillcardcontainer {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .skillcard {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: rgb(38, 50, 84);
+  }
+
+  .skillcard h1 {
+    font-size: 6vw;
+
+  }
+
+  .skill_details img {
+    width: 14rem;
+    background-size: cover;
+
+  }
+
+  .skill_details {
+    width: 100%;
+    height: 16rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    background-color: #050A30;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .skill_details h2 {
+    font-size: 4rem;
+  }
+
+  #Project h1 {
+    font-size: 8vw;
+  }
+
+  .projectbox {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .projectbox h2 {
+    font-size: 3.5rem;
+  }
+  #contactus h1 {
+    font-size: 8vw;
+  }
+  #contactus h1 span{
+    font-size: 8vw;
+    color: #FF2679;
+  }
+  
+  
+  input[type=text],
+  input[type=email],
+  textarea {
+    width: 80vw;
+    font-size: 3rem;
+  }
+  
+  input[type=submit] {
+    font-size: 3rem;
+  }
+  label {
+    font-size: 3rem;
+  }
+  footer{
+    align-items: start;
+    flex-direction: column;
+  }
+  .location_And_Email{
+    flex-direction: column;
+    align-items: start;
+  }
+  .location_And_Email, h3,p{
+    font-size: 3rem;
+  }
+  
+  .footeritems{
+    flex-direction: column;
+  }
+  .footeritems h4{
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .footeritems h1{
+    font-size:4rem;
+  }
+  .footeritems a{
+    padding: 0.6rem;
+    font-size: 2.5rem;
+  }
+  .footeritems a i{
+   font-size: 4rem;
+  }
+  .copyright {
+    width: 100%;padding: 1rem;
+    background-color: #fff;
+  }
+  .copyright p{
+   color: #000;
+  }
+}
+
+
+
+@media only screen and (max-width:767px) {
+  * {
+    font-size: 6px;
+  }
+
+  .nav {
+    padding: 0rem 2rem;
+    transition: all ease-in-out o.5s;
+  }
+
+  .navbar-links {
+    position: absolute;
+    /* z-index: ; */
+    top: 13.5rem;
+    flex-direction: column;
+    width: 50%;
+    align-items: start;
+    justify-content: start;
+    height: calc(100vh - 80px);
+    gap: 6rem;
+    color: #ff5100;
+    background-color: #000000e0;
+    left: 0%;
+    padding: 5rem;
+    transition: transform ease-in-out 0.3s;
+    transform: translateX(-150%);
+    backdrop-filter: blur(10px);
+  }
+
+  .navbar-links>li>a.active {
+    background-color: #ff4545;
+  }
+
+  .navbar-links.active {
+    transform: translateX(0%);
+  }
+
+  .nav>ul>li>a {
+    color: #fff8f5;
+    font-size: 3rem;
+  }
+
+  .nav span {
+    display: block;
+    background: #000;
+  }
+
+  .menuicon {
+    font-size: 5rem;
+    position: absolute;
+    top: 24px;
+    right: 35px;
+    color: #ffffff;
+  }
+
+  .logo {
+    font-size: 5rem;
+  }
+
+  .home {
+    padding: 0rem 2rem;
+    height: calc(100% - 80px);
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .box1 {
+    height: 40%;
+    justify-content: center;
+  }
+
+  .box2 {
+    height: 60%;
+  }
+
+  .box2 img {
+    width: 50vh;
+    padding: 5rem;
+  }
+
+  .homepagecontent>h1 {
+    font-size: 7vw;
+  }
+
+  .homepagecontent .Resumebutton {
+    padding: 1rem 3rem;
+    font-size: 3.5rem;
+    margin-top: 1rem;
+  }
+
+  .homepagecontent span {
+    font-size: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+  }
+
+  .homepagecontent span i {
+    color: #d5d5d5;
+    font-size: 5rem;
+  }
+
+  #About_Section {
+    padding: 0rem 2rem;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .aboutcontent,
+  .aboutimage {
+    height: auto;
+    width: 100%;
+  }
+
+  .aboutimage img {
+    width: 58vh;
+  }
+
+  .aboutcontent h1 {
+    font-size: 10vw;
+    text-align: center;
+  }
+
+  .aboutcontent p {
+    font-size: 4vw;
+    text-align: justify;
+  }
+
+  .aboutcontent h1 span {
+    font-size: 8vw;
+  }
+
+  #skills {
+    height: auto;
+    padding: 0rem 2rem;
+  }
+
+  #skills>h1 {
+    font-size: 8vw;
+    padding: 1rem;
+  }
+
+  .skillcardcontainer {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .skillcard {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: rgb(38, 50, 84);
+  }
+
+  .skillcard h1 {
+    font-size: 6vw;
+
+  }
+
+  .skill_details img {
+    width: 14rem;
+    background-size: cover;
+
+  }
+
+  .skill_details {
+    width: 100%;
+    height: 16rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    background-color: #050A30;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .skill_details h2 {
+    color: #e7e7e7;
+    font-size: 4rem;
+    font-family: "Nunito", sans-serif;
+  }
+
+  #Project {
+    padding: 0rem 2rem;
+  }
+
+  #Project h1 {
+    font-size: 8vw;
+  }
+
+  .projectbox {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .projectbox h2 {
+    font-size: 3.5rem;
+  }
+  #contactus h1 {
+    font-size: 8vw;
+  }
+  #contactus h1 span{
+    font-size: 8vw;
+    color: #FF2679;
+  }
+  
+  
+  input[type=text],
+  input[type=email],
+  textarea {
+    width: 80vw;
+    font-size: 3rem;
+  }
+  
+  input[type=submit] {
+    font-size: 3rem;
+  }
+  label {
+    font-size: 3rem;
+  }
+  footer{
+    align-items: start;
+    flex-direction: column;
+  }
+  .location_And_Email{
+    flex-direction: column;
+    align-items: start;
+  }
+  .location_And_Email, h3,p{
+    font-size: 3rem;
+  }
+  
+  .footeritems{
+    flex-direction: column;
+  }
+  .footeritems h4{
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .footeritems h1{
+    font-size:4rem;
+  }
+  .footeritems a{
+    padding: 0.6rem;
+    font-size: 2.5rem;
+  }
+  .footeritems a i{
+   font-size: 4rem;
+  }
+  .copyright {
+    width: 100%;padding: 1rem;
+    background-color: #fff;
+  }
+  .copyright p{
+   color: #000;
+  }
+  
+}
