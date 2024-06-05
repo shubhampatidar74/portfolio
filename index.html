@@ -104,16 +104,9 @@
             <img src="images/nodejs.png" alt="">
             <h2>Node js</h2>
           </div>
-          <div class="skill_details">
-            <img src="images/php.png" alt="">
-            <h2>Php</h2>
-          </div>
           <br><br>
           <h1>Database</h1>
-          <div class="skill_details">
-            <img src="images/mysql.webp" alt="">
-            <h2>Mysql</h2>
-          </div>
+          
           <div class="skill_details">
             <img src="images/mongodb.png" alt="">
             <h2>Mongodb</h2>
@@ -169,7 +162,9 @@
     </section>
     <section id="contactus">
       <h1>Contact <span>US</span></h1>
-      <form>
+      <form action="https://formspree.io/f/mgegjnwp"
+      method="POST"
+        >
         <label for="fname">First Name</label>
         <br>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -181,11 +176,11 @@
         <br>
         <label for="email">Email</label>
         <br>
-        <input type="email" id="email" placeholder="Your Email">
+        <input type="email" name="email" id="email" placeholder="Your Email">
         <br>
         <label for="subject">Massage</label>
         <br>
-        <textarea id="subject" name="subject" placeholder="Write Massage.." style="height:200px"></textarea>
+        <textarea id="subject" name="message" placeholder="Write Massage.." style="height:200px"></textarea>
         <br>
         <input type="submit" value="Submit">
       </form>
@@ -231,7 +226,7 @@
       <p>Copyright ©2024. All Rights Reserved. — Designed with love by Shubham Patidar</p>
     </div>
   </div>
-
+  
   <script src="script.js"></script>
 </body>
 
